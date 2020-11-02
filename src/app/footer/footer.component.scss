@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+
+* {
+  font-family: Roboto;
+}
+
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #b3bdcc;
+  color: white;
+
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+}
+
+.footer {
+  width: 100vw;
+  height: 287px;
+  background-color: #f6f6f9;
+}
+
+.footer-content {
+  margin-top: 70px;
+}
+
+.footer-content #socials {
+  text-align: center;
+}
+
+.footer-content #socials a {
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+}
+
+.footer #logoDiv {
+  margin-left: 50%;
+  align-items: right;
+}
+
+.footer #logoSimSave {
+  width: 155.4px;
+  height: 39.5px;
+}
+
+#contact-us {
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  color: #b3bdcc;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#contact-us a {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 14px;
+  width: 25px;
+  height: 25px;
+  margin: 5px 5px;
+  margin-left: -60px;
+  margin-top: -10px;
+  float: inline-start;
+  position: absolute;
+  // background: #b3bdcc 0% 0% no-repeat padding-box;
+}
+
+#contact-us-text {
+  text-align: left;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+#contact-us pre {
+  max-width: 50%;
+  font-size: 18px;
+  line-height: 100%;
+  margin-left: -35px;
+  word-wrap: normal;
+  word-break: break-all;
+  font: normal normal normal 18px/22px Roboto;
+}
+
+#contact-us h1 {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: Roboto;
+}
