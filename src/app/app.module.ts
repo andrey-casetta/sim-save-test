@@ -12,6 +12,11 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './card/card.component';
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,8 @@ import { CardComponent } from './card/card.component';
     BodyComponent,
     FooterComponent,
     CardComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +36,9 @@ import { CardComponent } from './card/card.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
+    HttpClientModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
