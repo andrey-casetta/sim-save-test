@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './home/home.component';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,9 @@ import { HomeComponent } from './home/home.component';
     MatCardModule,
     HttpClientModule,
     MatInputModule,
+    CommonModule,
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

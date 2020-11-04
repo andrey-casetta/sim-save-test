@@ -1,12 +1,15 @@
 .main {
-  max-width: 100vw;
-  background: 0% 0% no-repeat padding-box;
-  min-width: 430px;
+  display: block;
+  flex-direction: column;
+  max-width: 1920px;
+  min-width: 414px;
 }
 
 .main img {
   max-width: 100vw;
   max-height: 800px;
+  min-width: 414px;
+  min-width: 375px;
 }
 
 .main .divider {
@@ -61,16 +64,73 @@
   font-family: Roboto;
 }
 
-@media (min-width: 0px) and (max-width: 649px) {
+@media screen and (min-width: 0px) and (max-width: 413px) {
   .main img {
+    max-width: 800px;
     min-width: 414px;
-    width: 100%;
-    height: 375px;
-    left: -200px;
-    align-self: center;
-    // position: absolute;
-    display: inline-block;
-    -webkit-clip-path: inset(0px 1% 0px 46%);
-    clip-path: inset(0px 1% 0px 46%);
+    min-height: 375px;
+    max-height: 375px;
+    height: 100%;
+
+    position: relative;
+    left: -385px;
+    // -webkit-clip-path: inset(0px 0% 50% 46%);
+    clip-path: inset(0px 6% 0% 0%);
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 500px) {
+  .main img {
+    max-width: 980px;
+    min-width: 414px;
+    min-height: 375px;
+    max-height: 10%;
+
+    position: relative;
+    left: -490px;
+    // -webkit-clip-path: inset(0px 0% 50% 46%);
+    clip-path: inset(0px 4% 0% 0%);
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 535px) {
+  .main img {
+    max-width: 1180px;
+    min-width: 414px;
+    min-height: 375px;
+    max-height: 10%;
+    width: auto;
+
+    position: relative;
+    left: -620px;
+    // -webkit-clip-path: inset(0px 0% 50% 46%);
+    clip-path: inset(0px 6% 0% 0%);
+  }
+}
+@media screen and (min-width: 536px) and (max-width: 630px) {
+  .main img {
+    max-width: 1280px;
+    min-width: 414px;
+    min-height: 375px;
+    max-height: 10%;
+    width: auto;
+
+    position: relative;
+    left: -620px;
+    // -webkit-clip-path: inset(0px 0% 50% 46%);
+    clip-path: inset(0px 6% 0% 0%);
+  }
+}
+@media screen and (min-width: 631px) and (max-width: 767px) {
+  .main img {
+    max-width: 1380px;
+    min-width: 414px;
+    min-height: 375px;
+    height: auto;
+    max-height: 10%;
+    object-fit: cover;
+
+    position: relative;
+    left: -687px;
+    // -webkit-clip-path: inset(0px 0% 50% 46%);
+    clip-path: inset(0px 4% 0% 0%);
   }
 }

@@ -1,76 +1,49 @@
-<div id="main-div" class="row around-md">
-  <div class="col-xs-12 col-sm-8 col-md-3">
-    <div class="box">
-      <mat-card class="card">
-        <mat-card-title class="card-title">Shiba Inu</mat-card-title>
-
-        <mat-card-content>
-          <p class="card-text">
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
+<div id="main-div" class="row">
+  <div
+    id="cards-row"
+    *ngFor="let product of productsList"
+    class="col-xs-12 col-sm-6 col-md-5 col-lg-3"
+  >
+    <mat-card
+      id="card"
+      class="col-xs-12 col-sm-6 col-md-5 col-lg-3"
+      [ngClass]="{
+        redColor: product.color === '#f22627',
+        blueColor: product.color === '#236fe6',
+        purpleColor: product.color === '#7047ea',
+        greenColor: product.color === '#7be7b8'
+      }"
+    >
+      <div
+        id="rectangle"
+        [ngClass]="{
+          rectangleRed: product.color === '#f22627',
+          rectangleBlue: product.color === '#236fe6',
+          rectanglePurple: product.color === '#7047ea',
+          rectangleGreen: product.color === '#7be7b8'
+        }"
+      ></div>
+      <mat-card-title class="card-title">
+        {{ product.title }}
+      </mat-card-title>
+      <mat-card-content>
+        <p class="card-text">
+          {{ product.text }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div
+          *ngIf="
+            product.title === 'Student' || product.title === 'Specialist';
+            else elseBlock
+          "
+        >
+          <button mat-stroked-button disabled>Em Breve</button>
+        </div>
+        <ng-template #elseBlock>
           <button mat-stroked-button>Saiba mais</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-8 col-md-3">
-    <div class="box">
-      <mat-card class="card">
-        <mat-card-title class="card-title">Shiba Inu</mat-card-title>
-        <mat-card-content>
-          <p class="card-text">
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-stroked-button class="soon">Em Breve</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-8 col-md-3">
-    <div class="box">
-      <mat-card class="card">
-        <mat-card-title class="card-title">Shiba Inu</mat-card-title>
-
-        <mat-card-content>
-          <p class="card-text">
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-stroked-button class="soon">Em Breve</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-8 col-md-3">
-    <div class="box">
-      <mat-card class="card">
-        <mat-card-title class="card-title">Shiba Inu</mat-card-title>
-        <mat-card-content>
-          <p class="card-text">
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-stroked-button>Saiba mais</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+        </ng-template>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>

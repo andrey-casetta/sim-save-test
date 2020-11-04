@@ -2,12 +2,17 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+  max-height: 65px;
+  min-width: 414px;
 }
 
 .toolbar img {
   margin-left: 1%;
 }
 
-app-button {
-  margin-left: 20px;
+@media (max-width: 414px) {
+  .toolbar img {
+    clip-path: inset(0px 68% 0px 0%);
+  }
 }
