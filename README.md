@@ -11,11 +11,11 @@ Na página inicial, as informações dos boxes com os produtos deverão ser alim
 Na home, todos os botões "Cadastre-se" e "Entrar" deverão linkar para a página de login. Já na página de login, ao clicar na logo deverá voltar à home.
 
 ## O que foi avaliado:
-### Utilização geral do Angular. 
-### Rotas e Navegação entre páginas utilizando o Angular. 
-### Fidelidade do layout programado em relação ao layout original proposto
-### Capacidade para instalação de pacotes (nesse caso o Material Design)
-### Capacidade para consumo de APIs Rest.
+Utilização geral do Angular. 
+Rotas e Navegação entre páginas utilizando o Angular. 
+Fidelidade do layout programado em relação ao layout original proposto
+Capacidade para instalação de pacotes (nesse caso o Material Design)
+Capacidade para consumo de APIs Rest.
 
 O prazo dado para realização do projeto foi de 5 dias.
 
