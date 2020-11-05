@@ -5,13 +5,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ProductsService {
-
   constructor(private http: HttpClient) {}
 
   private readonly urlAPI = 'https://teste-simsave.getsandbox.com/home';
-  localAPI = 'http://localhost:3000/products';
+  private readonly localAPI = 'http://localhost:3000/products';
 
-  getProducts() {
+  getProductsAPI() {
     return this.http.get(this.urlAPI);
+  }
+
+  getProductsLocalAPI() {
+    return this.http.get(this.localAPI);
   }
 }
