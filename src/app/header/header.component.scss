@@ -2,15 +2,25 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   max-height: 65px;
   min-width: 414px;
+  box-shadow: 0px 2px 3px rgb(195, 194, 194);
+  position: relative;
+  max-width: 1920px;
 }
 
 .toolbar img {
-  margin-left: 1%;
+  height: 30px;
+  width: 118px;
+  margin-left: 10px;
 }
 
+.button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @media (max-width: 414px) {
   .toolbar img {
     clip-path: inset(0px 68% 0px 0%);

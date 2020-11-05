@@ -25,13 +25,11 @@ export class CardComponent implements OnInit {
     //         };
     //         this.productsList.push(product);
     //       }
-    //       console.log(this.productsList);
     //     }
     //   }
     // });
     this.productsService.getProducts().subscribe((products) => {
       this.productsList = products;
-      console.log(this.productsList);
     });
   }
 }

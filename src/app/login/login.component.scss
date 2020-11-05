@@ -9,7 +9,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
@@ -38,6 +37,7 @@
   font-size: 16px;
   color: #5d5d5d;
 }
+
 #form {
   display: flex;
   flex-direction: column;
@@ -57,16 +57,17 @@
   text-align: center;
   width: 94.91px;
   height: 36px;
-  //   width: 50%;
 }
 
-#first-half {
-  background-color: #1767e5;
-  width: 100vw;
-  height: 50%;
+#form input {
+  color: black;
 }
-#second-half {
-  background-color: #f6f6f9;
-  width: 100vw;
-  height: 50%;
+
+#main-div {
+  margin: 0;
+  background: linear-gradient(to bottom, #1767e5 50%, #f6f6f9 0%);
+
+  height: 100vh;
+  text-align: center;
+  color: #fff;
 }
