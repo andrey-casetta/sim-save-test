@@ -1,4 +1,4 @@
-#Este projeto foi realizado como um teste técnico para uma entrevista de emprego com as seguintes orientações e requerimentos:
+# Este projeto foi realizado como um teste técnico para uma entrevista de emprego com as seguintes orientações e requerimentos:
 
 Instruções gerais:
 Serão duas páginas, que deverão ser programadas utilizando o framework Angular 7+.
