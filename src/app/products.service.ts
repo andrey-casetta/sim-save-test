@@ -7,14 +7,9 @@ import { Injectable } from '@angular/core';
 export class ProductsService {
   constructor(private http: HttpClient) {}
 
-  private readonly urlAPI = 'https://teste-simsave.getsandbox.com/home';
-  private readonly localAPI = 'http://localhost:3000/products';
+  private readonly urlAPI = 'http://api.simsave.com.br/v1/test-api/home';
 
   getProductsAPI() {
     return this.http.get(this.urlAPI);
-  }
-
-  getProductsLocalAPI() {
-    return this.http.get(this.localAPI);
   }
 }

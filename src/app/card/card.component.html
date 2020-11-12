@@ -4,23 +4,23 @@
       id="card"
       class="col-xs-12 col-sm-6 col-md-5 col-lg-3"
       [ngClass]="{
-        redColor: product.color === '#f22627',
-        blueColor: product.color === '#236fe6',
-        purpleColor: product.color === '#7047ea',
-        greenColor: product.color === '#7be7b8'
+        redColor: product.color === '#F11516',
+        blueColor: product.color === '#1767E5',
+        purpleColor: product.color === '#6B41E9',
+        greenColor: product.color === '#35DB93'
       }"
     >
       <div
         id="rectangle"
         [ngClass]="{
-          rectangleRed: product.color === '#f22627',
-          rectangleBlue: product.color === '#236fe6',
-          rectanglePurple: product.color === '#7047ea',
-          rectangleGreen: product.color === '#7be7b8'
+          rectangleRed: product.color === '#F11516',
+          rectangleBlue: product.color === '#1767E5',
+          rectanglePurple: product.color === '#6B41E9',
+          rectangleGreen: product.color === '#35DB93'
         }"
       ></div>
       <mat-card-title class="card-title">
-        {{ product.title }}
+        {{ product.title.toUpperCase() }}
       </mat-card-title>
       <mat-card-content>
         <p class="card-text">
