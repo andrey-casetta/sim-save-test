@@ -1,8 +1,33 @@
+
+
 # SimSaveSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+## Este projeto foi desenvolvido como um teste para uma entrevista de emprego com as seguintes orientações:
+
+### Instruções gerais:
+Serão duas páginas, que deverão ser programadas utilizando o framework Angular 7+.
+As páginas deverão ser responsivas. As variações do layout para mobile e desktop estão no arquivo de design.
+A fonte utilizada é a Roboto (  https://fonts.google.com/specimen/Roboto )
+Deverá ser utilizado o Material Design para botões e campos de texto ( https://material.angular.io/)
+O formulário de login não precisa ser programado para envio, nesse caso irei avaliar apenas o layout.
+Deverá ser utilizado algum sistema de grid (sugestão: http://flexboxgrid.com/ )
+Na página inicial, as informações dos boxes com os produtos deverão ser alimentados através da api rest (GET: https://teste-simsave.getsandbox.com:443/home )
+Na home, todos os botões "Cadastre-se" e "Entrar" deverão linkar para a página de login. Já na página de login, ao clicar na logo deverá voltar à home.
+
+### O que será avaliado:
+Utilização geral do Angular. 
+Rotas e Navegação entre páginas utilizando o Angular. 
+Fidelidade do layout programado em relação ao layout original proposto
+Capacidade para instalação de pacotes (nesse caso o Material Design)
+Capacidade para consumo de APIs Rest.
+Prazo de entrega: 5 dias úteis
+
+
 ## Development server
+
+Run `json-server --watch db.json` para testar com o servidor local.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
